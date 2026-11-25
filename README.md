@@ -4,15 +4,11 @@ Static site in English, Turkish, German, Spanish and French. No framework, no de
 
 ## Publish
 
-1. Fill in `config.mjs` (`siteUrl`, `contactEmail`; `storeUrl` once the extension is published).
-2. `npm run build`
-3. Upload the **contents of `dist/`** to your host (Cloudflare Pages, Netlify, GitHub Pages, ...).
+Hosted on Cloudflare Pages, connected to this GitHub repository: every push to `main` builds and publishes the site.
 
-`dist/_headers` sets security headers on Netlify and Cloudflare Pages. GitHub Pages ignores it; the pages then still carry the Content Security Policy as a meta tag, but not the clickjacking and HSTS headers.
+Cloudflare settings: production branch `main`, framework preset None, build command `npm run build`, output directory `dist`, project name `pastedeck-app`. If the project gets another address or a custom domain, change `siteUrl` in `config.mjs`.
 
-## Automatic publishing
-
-Push this folder to a public GitHub repository and choose Settings, Pages, Source: GitHub Actions. Every push to `main` then publishes the site; the address is filled in automatically.
+`dist/_headers` sets the security headers on Cloudflare Pages.
 
 ## Connect the extension
 
