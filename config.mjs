@@ -7,5 +7,5 @@ export default {
   // Checkout page for Pro. While empty, Pro is shown as coming soon.
   buyUrl: '',
   // Shown in the privacy policy, required by the Chrome Web Store.
-  contactEmail: '',
+  contactEmail: 'wworldin90@gmail.com',
 };
